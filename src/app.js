@@ -48,7 +48,8 @@ app.get("/weather" , (req,res) => {
 
         if(!req.query.address){
             return res.send({
-                error : "you must provide an address term "
+                error : "you must provide an address term ",
+                "title"  :"weather"
             })
         } 
 
