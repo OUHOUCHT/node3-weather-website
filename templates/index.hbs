@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index </title>
+    <link  rel="stylesheet" href="/css/styles.css" >
+    <link rel="icon"  href="/img/weather.png" />
+
+</head>
+<body>
+
+    <div class="content">
+
+        {{>header}}
+
+        <p>use this since to get your weather </p>
+
+        <form method="get"   >
+            <input type="text"  name="address" class="address" placeholder="enter the address"/ >
+            <input type="submit" value="serach"></input>
+        </form>
+
+        <p id="msg1"></p>
+        <p id="msg2"></p>
+            
+        </div>
+
+    </div>
+
+      {{>footer}}
+
+    <script src="/js/utils.js" ></script>
+</body>
+</html>

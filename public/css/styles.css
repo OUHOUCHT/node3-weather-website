@@ -1,0 +1,66 @@
+body {
+    color: red;
+    font-family: 'Times New Roman', Times, serif ;
+    max-width: 600px;
+    margin :  0 auto;
+    padding-left : 0 10px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+
+
+.content {
+    flex-grow: 1;
+}
+
+footer {
+
+    flex-grow: 0;
+    margin-top: 26px;
+    padding: 16px 0;
+    color : darkblue;
+    border-top: 1px solid #eeeeee;
+}
+
+header{
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+
+header a {
+    color : darkblue ;
+    margin-right:  16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.portrait  {
+    width: 200px;
+    height:  300px;
+}
+
+
+
+  .address {
+    border: 1px solid red;
+    padding: 12px;
+    width: 50%%;
+}
+
+
+input[type=submit] {
+
+    cursor: pointer;
+    padding: 10px;
+
+}
