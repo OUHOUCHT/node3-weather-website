@@ -10,8 +10,13 @@ axios.get('http://api.weatherapi.com/v1/current.json' ,{
         q: `${lat},${lon}`
     }
 }).then(
-    ({data :{ current : {temp_c}}}) => {
-        callback(undefined ,` data clear troughout the day . it is currently ${temp_c} degrees out . `)
+    ({data}) => {
+
+        const  {current : {condition : {text}}} = data
+        const  {current : {temp_c ,humidity} } =   data;
+        
+        callback(undefined ,` data clear troughout the day . it is currently ${temp_c} degrees out . 
+        It feels like ${text} The humidity is ${humidity} % `)
     }
 ).catch( ({cause}) => {
     
